@@ -17,6 +17,7 @@ export const postitems = async (
     res.status(201).json(newItem);
   } catch (error) {
     next(error);
+    console.log(error)
   }
 };
 
